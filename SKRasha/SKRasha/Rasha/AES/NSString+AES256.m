@@ -15,7 +15,8 @@
 -(NSString *) aes256_encrypt:(NSString *)key
 {
     const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+//    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [NSData dataWithBytes:cstr length:strlen(cstr)];
     //对数据进行加密
     NSData *result = [data aes256_encrypt:key];
     
