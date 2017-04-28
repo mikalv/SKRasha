@@ -1,5 +1,5 @@
 # SKRasha
-Encrypt your data with simple Function
+Encrypt your data with RSA+AES in simple Function , It's also has sign function , I will update README.md later.
 
 ## Make your RSA keys
 1. **make your private key in Terminal.**  
