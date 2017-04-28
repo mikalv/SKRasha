@@ -22,7 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString* private_key_string = @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAK78zUPg8fwoKERo\
+    NSString* private_key_string =
+    @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAK78zUPg8fwoKERo\
     8ll2CDfqAsCbpTmfc29CR+8pSZi6ekFtcx4UOPLWwpnPqiKr+hAOqqPtrulg5KLM\
     HPNgPkxIZRMTD6hyCVTFfc4g0M3rXwuizDeczu8ykQMK+BSYH4bajfJ1ewhlVSx3\
     03y1vtLMoYOpzB2pUoi5MNItfwDvAgMBAAECgYEAmnk0wx1KwWy5z1pNxse5jZKZ\
