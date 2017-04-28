@@ -9,7 +9,7 @@ Encrypt your data with simple Function
 3. **Change your private key into PKCS8**  
 ``openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out private_key.pem``  
   
-*then we will use step2 and step3 created public and private keys*
+Then we will use **step2** and **step3** created public and private keys
 
 ## How to use 
 ```
@@ -59,7 +59,7 @@ NSString* private_key_string = @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoG
 
 ## Input to your Project
 make sure the search path in Xcode contains openssl 
-[[https://github.com/Stark1937/SKRasha/blob/master/SearchPath.png?raw=true]]
+
 ![Alt text](https://github.com/Stark1937/SKRasha/blob/master/SearchPath.png?raw=true)
 ## Thanks
 this repo is base on [iOSRSAHandler](https://github.com/HustBroventure/iOSRSAHandler "Title") inline link.
