@@ -1,19 +1,16 @@
 # SKRasha
 Encrypt your data with simple Function
 
-##make your RSA keys
+##Make your RSA keys
 >1.make your private key in Terminal.
-```openssl genrsa -out rsa_private_key.pem 1024
-```
+```openssl genrsa -out rsa_private_key.pem 1024```
 >2.make your public key
 ```openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem```
-
 >3.Change your private key into PKCS8.
-```openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out private_key.pem 
+```openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out private_key.pem```
+##How to use
 ```
-
-```
-	NSString* private_key_string = @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAK78zUPg8fwoKERo\
+NSString* private_key_string = @"MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAK78zUPg8fwoKERo\
     8ll2CDfqAsCbpTmfc29CR+8pSZi6ekFtcx4UOPLWwpnPqiKr+hAOqqPtrulg5KLM\
     HPNgPkxIZRMTD6hyCVTFfc4g0M3rXwuizDeczu8ykQMK+BSYH4bajfJ1ewhlVSx3\
     03y1vtLMoYOpzB2pUoi5MNItfwDvAgMBAAECgYEAmnk0wx1KwWy5z1pNxse5jZKZ\
