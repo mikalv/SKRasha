@@ -2,9 +2,9 @@
 Encrypt your data with RSA+AES in simple Function , It's also has sign function , I will update README.md later.
 
 ## Make your RSA keys
-1. **make your private key in Terminal.**  
+1. **Make your private key in Terminal.**  
 ``openssl genrsa -out rsa_private_key.pem 1024``  
-2. **make your public key**  
+2. **Make your public key**  
 ``openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem``  
 3. **Change your private key into PKCS8**  
 ``openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt -out private_key.pem``  
@@ -62,4 +62,4 @@ make sure the search path in Xcode contains openssl
 
 ![Alt text](https://github.com/Stark1937/SKRasha/blob/master/SearchPath.png?raw=true)
 ## Thanks
-this repo is base on [iOSRSAHandler](https://github.com/HustBroventure/iOSRSAHandler "Title") inline link.
+this repo is base on [iOSRSAHandler](https://github.com/HustBroventure/iOSRSAHandler "Title").
